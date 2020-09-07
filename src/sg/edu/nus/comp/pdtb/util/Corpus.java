@@ -701,7 +701,7 @@ public class Corpus {
 		} else {
 			dtreeFilePath = genDependTreePath(article, featureType);
 		}
-		String[] dtreeTexts = Util.readFile(dtreeFilePath).split("\\n\\n");
+		String[] dtreeTexts = Util.readFile(dtreeFilePath).split("\\r\\n");
 		List<String> result = new ArrayList<>(dtreeTexts.length);
 		for (String text : dtreeTexts) {
 			for (int i = 0; i < text.length() - 1; ++i) {

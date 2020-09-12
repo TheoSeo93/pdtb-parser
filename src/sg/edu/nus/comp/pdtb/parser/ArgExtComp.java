@@ -298,14 +298,14 @@ public class ArgExtComp extends Component {
 					} else if (i == 23) {
 						resultLine.append((sentNumber - 1) + "|");
 					} else if (i == 24) {
-						resultLine.append(args[2] + "|");
+						resultLine.append(args[2].replaceAll("\n", "") + "|");
 
 					} else if (i == 32) {
 						resultLine.append(args[1] + "|");
 					} else if (i == 33) {
 						resultLine.append(sentNumber + "|");
 					} else if (i == 34) {
-						resultLine.append(args[3] + "|");
+						resultLine.append(args[3].replaceAll("\n", "") + "|");
 					} else {
 						resultLine.append(col + "|");
 					}
